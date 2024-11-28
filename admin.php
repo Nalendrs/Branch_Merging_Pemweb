@@ -17,57 +17,52 @@ if ($_SESSION['role'] = 'admin') {
 
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #007bff;
-        }
-        .btn-tambah-produk {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin: 20px 0;
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(90deg, #4caf50, #45a049);
-            border: none;
-            border-radius: 50px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-            text-decoration: none;
-        }
-        .btn-tambah-produk:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-        }
-        .btn-logout {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-            text-align: center;
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            font-size: 16px;
-            text-decoration: none;
-        }
-        .btn-logout:hover {
-            background-color: #c82333;
-        }
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    margin-top: 50px; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    color: #343a40; 
+    margin-bottom: 30px; 
+}
+
+.btn-tambah-produk, .btn-logout {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+.btn-tambah-produk {
+    background-color: #28a745; 
+    color: white; 
+    transition: background-color 0.3s; 
+}
+
+.btn-logout {
+    background-color: #dc3545; 
+    color: white; 
+    transition: background-color 0.3s;
+}
+
+.btn-tambah-produk:hover {
+    background-color: #218838; 
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
     </style>
 </head>
 <body>

@@ -8,126 +8,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #6f42c1, #d9a7c7);
-            font-family: 'Arial', sans-serif;
-        }
-        
-        .container {
-            margin-top: 50px;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
 
-        h1 {
-            font-size: 2rem;
-            color: #4b0082;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+.container {
+    margin-top: 50px; 
+    background-color: #ffffff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
 
-        .btn-success {
-            background-color: #28a745;
-            border-color: #28a745;
-            font-weight: bold;
-            border-radius: 50px;
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
-        }
+h1 {
+    text-align: center; 
+    color: #343a40; 
+    margin-bottom: 30px;
+}
 
-        .btn-success:hover {
-            background-color: #218838;
-            border-color: #1e7e34;
-        }
+.table {
+    border-radius: 10px; 
+    overflow: hidden; 
+}
 
-        .table {
-            border-radius: 8px;
-            overflow: hidden;
-        }
+.table th {
+    background-color: #007bff; 
+    color: white; 
+}
 
-        .table-dark {
-            background-color: #4b0082;
-            color: white;
-            font-weight: bold;
-        }
+.table td {
+    vertical-align: middle; 
+}
 
-        .table-bordered {
-            border: 2px solid #ddd;
-        }
+.btn-success {
+    border-radius: 5px; 
+}
 
-        .table th, .table td {
-            vertical-align: middle;
-        }
+.btn-primary, .btn-warning, .btn-danger {
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
 
-        .table td img {
-            max-width: 100px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
 
-       
-        .btn-warning, .btn-danger {
-            border-radius: 50px;
-            padding: 6px 15px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.btn-warning:hover {
+    background-color: #e0a800; 
+}
 
-        .btn-warning:hover, .btn-danger:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+.btn-danger:hover {
+    background-color: #c82333;
+}
 
-        .btn-warning {
-            background-color: #ffc107;
-            border-color: #ffc107;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-            border-color: #dc3545;
-        }
-
-        .btn-warning:hover {
-            background-color: #e0a800;
-            border-color: #d39e00;
-        }
-
-        .btn-danger:hover {
-            background-color: #c82333;
-            border-color: #bd2130;
-        }
-
-        
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            border-radius: 50px;
-            padding: 6px 15px;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
-
-       
-        @media (max-width: 768px) {
-            .table th, .table td {
-                font-size: 0.9rem;
-            }
-
-            h1 {
-                font-size: 1.6rem;
-            }
-        }
-
-       
-        .table td .btn {
-            margin: 0 5px;
-        }
+.text-end {
+    margin-bottom: 20px; 
+}
     </style>
 </head>
 <body>
@@ -160,7 +96,7 @@
                     <td><?= htmlspecialchars($row['name']); ?></td>
                     <td>Rp <?= number_format($row['price'], 0, ',', '.'); ?></td>
                     <td>
-                        <a href="../pertemuan-6/<?= htmlspecialchars($row['image']); ?>" target="_blank" class="btn btn-primary btn-sm">Unduh</a>
+                        <a href="./upload/<?= htmlspecialchars($row['image']); ?>" target="_blank" class="btn btn-primary btn-sm">Unduh</a>
                     </td>
                     <td>
                         <a href="edit.php?id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a>

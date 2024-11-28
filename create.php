@@ -7,90 +7,58 @@
     <!-- Link Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      
         body {
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif; 
+}
 
-       
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
+.container {
+    margin-top: 50px;
+    background-color: #ffffff; 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
 
-        .container:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-        }
+h1 {
+    text-align: center; 
+    color: #343a40; 
+    margin-bottom: 30px; 
+}
 
-       
-        h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.btn-outline-primary {
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
 
-        
-        .form-control {
-            border-radius: 30px;
-            padding: 12px 20px;
-            border: 2px solid #ddd;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
+.btn-outline-primary:hover {
+    background-color: #007bff; 
+    color: white; 
+}
 
-        .form-control:focus {
-            border-color: #ff7e5f;
-            box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
-        }
+.form-label {
+    font-weight: bold; 
+    color: #495057; 
+}
 
-        
-        .btn-primary {
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            border: none;
-            border-radius: 50px;
-            padding: 12px 30px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
+.form-control {
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
+}
 
-        .btn-primary:hover {
-            background: linear-gradient(90deg, #feb47b, #ff7e5f);
-            transform: scale(1.05);
-        }
+.form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
 
-        
-        .btn-outline-primary {
-            border-color: #ff7e5f;
-            color: #ff7e5f;
-            padding: 10px 20px;
-            font-weight: 600;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-        }
+.btn-primary {
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
 
-        .btn-outline-primary:hover {
-            background-color: #ff7e5f;
-            color: #fff;
-        }
-
-        
-        .custom-file-label::after {
-            content: "Browse";
-            color: #ff7e5f;
-            font-weight: bold;
-        }
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
     </style>
 </head>
 <body>

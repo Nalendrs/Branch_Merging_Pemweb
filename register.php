@@ -8,51 +8,74 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            font-family: Arial, sans-serif;
+            background-color: lavender;
+            font-family: 'Arial', sans-serif;
         }
+
         .form-container {
-            max-width: 400px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 100px;
         }
-        .form-container h1 {
+
+
+        h1 {
             text-align: center;
-            color: #6e8efb;
             margin-bottom: 20px;
+            color: #007bff;
         }
+
+    
         .form-control {
-            border-radius: 20px;
-            padding: 10px 15px;
-            font-size: 14px;
+            border-radius: 30px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
         }
+
+        
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        
         .btn-custom {
-            background: #6e8efb;
-            color: #fff;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            transition: 0.3s;
+            background-color: #007bff;
+            color: white;
+            border-radius: 30px;
+            padding: 12px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
+
+        
         .btn-custom:hover {
-            background: #5a76d4;
-            transform: scale(1.05);
+            background-color: #0056b3;
+            color: #fff;
         }
+
+        
         .form-footer {
             text-align: center;
             margin-top: 20px;
         }
+
         .form-footer a {
-            color: #6e8efb;
+            color: #007bff;
             text-decoration: none;
+            font-weight: bold;
         }
+
         .form-footer a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>

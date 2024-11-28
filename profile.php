@@ -131,7 +131,7 @@ if($_SESSION['role'] = 'user'){
             ?>
                 <div class="col-md-4">
                     <div class="card product-card">
-                        <img src="../pertemuan-6/<?php echo $product['image']; ?>" class="product-img" alt="Produk">
+                        <img src='/Branch/upload/'<?php echo $product['image']; ?>" class="product-img" alt="Produk">
                         <div class="product-details">
                             <div class="product-name"><?php echo $product['name']; ?></div>
                             <div class="product-price">Rp <?php echo number_format($product['price'], 0, ',', '.'); ?></div>
