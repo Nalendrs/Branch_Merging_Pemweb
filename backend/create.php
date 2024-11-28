@@ -12,13 +12,12 @@ if(isset($_POST['submit'])) {
 
     $randomFilename = time().'-'.md5(rand()).'-'.$image;
 
-    $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/./pertemuan-6/upload/'.$randomFilename;
+    $uploadPath = $_SERVER['DOCUMENT_ROOT'].'/Branch/upload/'.$randomFilename;
 
     $upload = move_uploaded_file($tempImage, $uploadPath);
     
     if($upload) {
-
-        mysqli_query($db_connect, "INSERT INTO products (name, price, image) VALUES ('$name', '$price', '/./upload/$randomFilename')");
+        mysqli_query($db_connect, "INSERT INTO products (name, price, image) VALUES ('$name', '$price', '../upload/$randomFilename')");
         $message = "Produk berhasil diupload!";
         $alertType = "success";
     } else {
@@ -27,6 +26,7 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -95,4 +95,3 @@ if(isset($_POST['submit'])) {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
